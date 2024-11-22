@@ -58,6 +58,7 @@
 						</properties>
 						<!-- End: SECURED PROPERTIES CI/CD -->
 				        </cloudhub2Deployment>
+					<muleConfigFile>src/main/mule/github-actions.xml</muleConfigFile>
 					<classifier>mule-application</classifier>
 				</configuration>
 			</plugin>
