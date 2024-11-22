@@ -3,6 +3,8 @@ name: Publish to Exchange & Deploy to CH2.0
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:  # This enables manual dispatch via the API
+
     
 jobs:         
   build:
