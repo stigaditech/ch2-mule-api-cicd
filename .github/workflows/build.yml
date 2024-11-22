@@ -4,6 +4,11 @@ on:
   push:
     branches: [ main ]
   workflow_dispatch:  # This enables manual dispatch via the API
+    inputs:
+      deploy:
+        description: 'Deploy option'
+        required: true
+        default: 'deploy'
 
     
 jobs:         
