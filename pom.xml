@@ -46,17 +46,7 @@
 			                        <deploymentSettings>
 			                            <generateDefaultPublicUrl>true</generateDefaultPublicUrl>
 			                        </deploymentSettings>
-                    				<!-- Start: CONNECTED APP -->
-						<connectedAppClientId>${client.id}</connectedAppClientId>
-						<connectedAppClientSecret>${client.secret}</connectedAppClientSecret>
-						<connectedAppGrantType>client_credentials</connectedAppGrantType>
-						<!-- End: CONNECTED APP -->
-						
-						<!-- Start: SECURED PROPERTIES CI/CD -->
-						<properties>
-							<secure.key>${decryption.key}</secure.key>
-						</properties>
-						<!-- End: SECURED PROPERTIES CI/CD -->
+                    				
 				        </cloudhub2Deployment>
 					<muleConfigFile>src/main/mule/github-actions.xml</muleConfigFile>
 					<classifier>mule-application</classifier>
