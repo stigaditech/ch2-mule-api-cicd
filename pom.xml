@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>efaf37a2-50f0-4ccb-bdd0-cc062855811d</groupId>
-	<artifactId>sid-github-actions</artifactId>
-	<version>1.0.2</version>
+	<artifactId>sid-github-kochi-actions</artifactId>
+	<version>2.0.1</version>
 	<packaging>mule-application</packaging>
 
-	<name>sid-github-actions-${project.version}</name>
+	<name>sid-github-kochi-actions-${project.version}</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -15,7 +15,7 @@
 
 		<app.runtime>4.4.0</app.runtime>
 		<mule.maven.plugin.version>4.1.1</mule.maven.plugin.version>
-		<app.name>sid-github-actions-${project.version}</app.name>
+		<app.name>sid-github-kochi-actions-${project.version}</app.name>
 		<env>Sandbox</env>
 		<munit.version>2.3.13</munit.version>
 	</properties>
@@ -39,7 +39,7 @@
 			                        <environment>Sandbox</environment>
 			                        <target>Cloudhub-US-East-2</target>
 			                        <server>Repository</server>
-			                        <applicationName>${project.artifactId}</applicationName>
+			                        <applicationName>${app.name}</applicationName>
 			                        <releaseChannel>NONE</releaseChannel>
 			                        <replicas>1</replicas>
 			                        <vCores>0.1</vCores>
