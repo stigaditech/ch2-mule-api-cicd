@@ -33,31 +33,25 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					 <cloudhub2Deployment>
-				            	<uri>https://anypoint.mulesoft.com</uri>
-				            	<provider>MC</provider>
-				            	<environment>Sandbox</environment>
-				            	<target>Cloudhub-US-East-2</target>
-				            	<server>Repository</server>
-				            	<applicationName>${project.artifactId}</applicationName>
-				            	<releaseChannel>NONE</releaseChannel>
-				            	<replicas>1</replicas>
-				            	<vCores>0.1</vCores>
-				            	<deploymentSettings>
-				                	<generateDefaultPublicUrl>true</generateDefaultPublicUrl>
-				            	</deploymentSettings>
-					    	<muleVersion>${app.runtime}</muleVersion>
-						<!-- Start: CONNECTED APP -->
+					<cloudhub2Deployment>
+			                        <uri>https://anypoint.mulesoft.com</uri>
+			                        <provider>MC</provider>
+			                        <environment>Sandbox</environment>
+			                        <target>Cloudhub-US-East-2</target>
+			                        <server>Repository</server>
+			                        <applicationName>${project.artifactId}</applicationName>
+			                        <releaseChannel>NONE</releaseChannel>
+			                        <replicas>1</replicas>
+			                        <vCores>0.1</vCores>
+			                        <deploymentSettings>
+			                            <generateDefaultPublicUrl>true</generateDefaultPublicUrl>
+			                        </deploymentSettings>
+                    				<!-- Start: CONNECTED APP -->
 						<connectedAppClientId>${client.id}</connectedAppClientId>
 						<connectedAppClientSecret>${client.secret}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
 						<!-- End: CONNECTED APP -->
-						<applicationName>${app.name}</applicationName>
-						<environment>${env}</environment>
-						<workerType>MICRO</workerType>
-						<region>us-east-2</region>
-						<workers>1</workers>
-						<objectStoreV2>true</objectStoreV2>
+						
 						<!-- Start: SECURED PROPERTIES CI/CD -->
 						<properties>
 							<secure.key>${decryption.key}</secure.key>
