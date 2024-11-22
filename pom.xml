@@ -7,7 +7,7 @@
 	<version>1.0.2</version>
 	<packaging>mule-application</packaging>
 
-	<name>sid-github-actions</name>
+	<name>sid-github-actions-${project.version}</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -15,7 +15,7 @@
 
 		<app.runtime>4.4.0</app.runtime>
 		<mule.maven.plugin.version>4.1.1</mule.maven.plugin.version>
-		<app.name>sid-github-actions</app.name>
+		<app.name>sid-github-actions-${project.version}</app.name>
 		<env>Sandbox</env>
 		<munit.version>2.3.13</munit.version>
 	</properties>
