@@ -61,6 +61,21 @@
 					<classifier>mule-application</classifier>
 				</configuration>
 			</plugin>
+
+			    <plugin>
+			      <groupId>org.mule.tools.maven</groupId>
+			      <artifactId>exchange-mule-maven-plugin</artifactId>
+			      <version>0.0.23</version> <!-- or your required version -->
+			      <executions>
+			        <execution>
+			          <goals>
+			            <goal>exchange-pre-deploy</goal>
+			          </goals>
+			        </execution>
+			      </executions>
+			    </plugin>
+
+
 			<plugin>
 				<groupId>com.mulesoft.munit.tools</groupId>
 				<artifactId>munit-maven-plugin</artifactId>
