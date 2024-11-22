@@ -4,7 +4,7 @@
 
 	<groupId>efaf37a2-50f0-4ccb-bdd0-cc062855811d</groupId>
 	<artifactId>sid-github-kochi-actions</artifactId>
-	<version>2.0.3</version>
+	<version>2.0.4</version>
 	<packaging>mule-application</packaging>
 
 	<name>sid-github-kochi-actions-${project.version}</name>
@@ -52,12 +52,12 @@
 						</properties>
 						<!-- End: SECURED PROPERTIES CI/CD -->
 				        </cloudhub2Deployment>
-					<muleConfigFile>src/main/mule/github-actions.xml</muleConfigFile>
+					<!-- <muleConfigFile>src/main/mule/github-actions.xml</muleConfigFile> -->
 					<classifier>mule-application</classifier>
 				</configuration>
 			</plugin>
 
-			    <plugin>
+			   <!-- <plugin>
 			      <groupId>org.mule.tools.maven</groupId>
 			      <artifactId>exchange-mule-maven-plugin</artifactId>
 			      <version>0.0.23</version> <!-- or your required version -->
@@ -68,7 +68,7 @@
 			          </goals>
 			        </execution>
 			      </executions>
-			    </plugin>
+			    </plugin> -->
 
 
 			<plugin>
